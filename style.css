@@ -1,0 +1,232 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+header .logo {
+    width: 100px;
+}
+/* ... kode CSS lainnya ... */
+
+/* Style untuk gambar di Beranda */
+#beranda img {
+    width: 100%;
+    max-height: 400px; /* Maksimum tinggi gambar 300px */
+    object-fit: cover; /* Menyesuaikan gambar agar memenuhi area */
+}
+
+/* ... kode CSS lainnya ... */
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #008CB4;
+}
+
+/* ... kode CSS lainnya ... */
+
+nav ul {
+    list-style: none;
+    display: flex; /* Mengatur item navigasi dengan Flexbox */
+    justify-content: space-between; /* Memberikan jarak antar item */
+    align-items: center; /* Menyelaraskan item ke tengah */
+}
+
+nav ul li {
+    margin-left: 1em; /* Jarak antar item */
+}
+
+/* Style untuk layar kecil (ukuran layar kurang dari 768px) */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column; /* Mengatur item navigasi vertikal */
+        text-align: center; /* Menyusun teks ke tengah */
+    }
+    nav ul li {
+        margin-bottom: 10px; /* Margin bawah untuk item navigasi */
+        margin-left: 0; /* Menghilangkan margin kiri */
+    }
+}
+
+/* ... kode CSS lainnya ... */
+
+/* ... kode CSS lainnya ... */
+
+/* Style untuk layar kecil (ukuran layar kurang dari 768px) */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column; /* Mengatur item navigasi vertikal */
+        text-align: center; /* Menyusun teks ke tengah */
+    }
+    nav ul li {
+        margin-bottom: 10px; /* Margin bawah untuk item navigasi */
+        margin-left: 0; /* Menghilangkan margin kiri */
+    }
+}
+
+/* ... kode CSS lainnya ... */
+
+/* ... kode CSS lainnya ... */
+
+/* Style untuk menu toggle */
+#menuToggle {
+    display: none; /* Menyembunyikan tombol menu toggle di layar lebar */
+    padding: 10px 20px;
+    background: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style untuk navigasi saat tombol toggle diklik */
+nav ul.show {
+    display: block; /* Menampilkan item navigasi */
+    position: absolute; /* Menempatkan navigasi di atas konten */
+    top: 100%; /* Posisi navigasi di bawah header */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+}
+
+/* Style untuk layar kecil (ukuran layar kurang dari 768px) */
+@media (max-width: 767px) {
+    header h1 {
+        margin-left: 1em; /* Menggeser teks ke kiri */
+        font-size: 1.5rem; /* Mengurangi ukuran font judul*/ 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #menuToggle {
+        display: none; /* Menampilkan tombol menu toggle di layar kecil */
+    }
+    nav ul {
+        display: none; /* Menyembunyikan item navigasi */
+    }
+}
+
+/* ... kode CSS lainnya ... */
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0069D9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 0.5em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    background: #004d99;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background: #eee;
+    padding: 1em 0;
+    text-align: center;
+}

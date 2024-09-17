@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website HMPB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="file__1_-removebg-preview.png" alt="Logo Pemerintah" class="logo">
+            <h1>Welcome To Website HMPB</h1>
+            <!-- Di dalam header HTML -->
+    <nav>
+    <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#berita">Berita</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <button id="menuToggle">Menu</button> <!-- Tombol Menu Toggle -->
+    </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="beranda">
+            <div class="container">
+                <h2>Beranda</h2>
+                <img src="b44a2669-9719-448e-9f5c-1a7263363905.jpeg">
+                <p>Selamat Datang Di website resmi Himpunan Mahasiswa Panbar. Di sini Anda dapat menemukan berbagai informasi terkini tentang pelayanan publik, berita terbaru, dan program-program pemerintah.</p>
+            </div>
+        </section>
+
+        <section id="tentang">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <p>Kami berkomitmen untuk memberikan informasi yang transparan dan akurat kepada masyarakat. Website ini bertujuan untuk mempermudah akses informasi publik dan meningkatkan pelayanan kepada warga.</p>
+            </div>
+        </section>
+
+        <section id="layanan">
+            <div class="container">
+                <h2>Layanan</h2>
+                <div class="service-grid">
+                    <!-- Contoh Layanan -->
+                    <div class="service-item">
+                        <img src="images__1_-removebg-preview (1).png" alt="Layanan 1">
+                        <h3>Layanan 1</h3>
+                        <p>Informasi dan panduan mengenai Layanan 1.</p>
+                        <a href="layanan1.html" class="btn">Selengkapnya</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="4355179-removebg-preview.png" alt="Layanan 2">
+                        <h3>Layanan 2</h3>
+                        <p>Informasi dan panduan mengenai Layanan 2.</p>
+                        <a href="layanan2.html" class="btn">Selengkapnya</a>
+                    </div>
+                    <!-- Tambahkan layanan lainnya sesuai kebutuhan -->
+                </div>
+            </div>
+        </section>
+
+        <section id="berita">
+            <div class="container">
+                <h2>Berita Terbaru</h2>
+                <div id="newsList">
+                    <!-- Berita terbaru akan dimuat di sini -->
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <div class="container">
+                <h2>Kontak Kami</h2>
+                <form id="contactForm">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Himpunan Mahasiswa Panbar.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
